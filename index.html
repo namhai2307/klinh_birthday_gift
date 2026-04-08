@@ -30,39 +30,47 @@
             left: 50%;
             margin-left: -40px;
             width: 80px;
-            height: 100px;
+            height: 70px;
             text-align: center;
-            overflow: hidden;
-            border-radius: 10px;
-            background-color: red;
+            overflow: visible;
+            border-radius: 3px;
+            background-color: #e74c3c;
+            background-image: linear-gradient(#FFD700, #FFD700), linear-gradient(#FFD700, #FFD700);
+            background-size: 14px 100%, 100% 14px;
+            background-position: center, center;
+            background-repeat: no-repeat;
             transition: all .75s ease;
             animation-name: shaking;
         }
+        /* Gift box lid */
         .bonus:after {
             position: absolute;
-            top: 15px;
-            left: 0;
+            top: -16px;
+            left: -5px;
             content: '';
-            width: 80px;
-            height: 20px;
-            border-radius: 50%;
-            box-shadow: 0 3px 0 2px #FF0;
+            width: 90px;
+            height: 16px;
+            background-color: #c0392b;
+            background-image: linear-gradient(#FFD700, #FFD700);
+            background-size: 14px 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 2px;
             z-index: 3;
         }
+        /* Bow on top */
         .bonus:before {
             position: absolute;
-            top: 22px;
+            top: -46px;
             left: 50%;
-            margin-left: -15px;
-            content: '$';
-            width: 30px;
-            height: 30px;
-            line-height: 35px;
-            font-size: 20px;
-            font-weight: 700;
-            color: red;
-            background-color: #ff0;
-            border-radius: 50%;
+            transform: translateX(-50%);
+            content: '🎀';
+            font-size: 28px;
+            line-height: 1;
+            width: auto;
+            height: auto;
+            border-radius: 0;
+            background: none;
             z-index: 4;
         }
         .surprises .fly {
